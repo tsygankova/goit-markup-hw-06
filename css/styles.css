@@ -603,6 +603,11 @@ margin-right:0px;
 
 .subscription-form-container{
   display:flex;
+  flex-direction: column;
+}
+
+.subscription-line{
+  display: flex;
 }
 
 .social-call-form{
@@ -617,7 +622,6 @@ margin-right:0px;
   padding-left: 16px;
   font-size:16px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
   margin-right: 12px;
 }
 
