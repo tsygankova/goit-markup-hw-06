@@ -386,15 +386,17 @@
         </div>
 
         <!--ФУТЕР ФОРМА РЕГИСТРАЦИИ-->
-        <div class = "subscription-form">
-          <p class = "social-call">Подпишитесь на рассылку</p>
-          <a class = "button">Подписаться
+        <form class = "subscription-form">
+          <div class = "subscription-form-container">
+            <label class = "social-call" for = "email">Подпишитесь на рассылку</label>
+              <input class = "social-call-form" type = "email" name = "email" id = "email" placeholder = "E-mail">
+          <button class = "button" type = "submit" class = >Подписаться
             <svg class = "sendicon">
               <use href = "./images/sprite.svg#icon-sendicon"></use>
             </svg>
-
-          </a>
-        </div>
+           </button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
