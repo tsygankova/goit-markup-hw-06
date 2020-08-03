@@ -611,11 +611,11 @@ margin-right:0px;
 }
 
 .subscription-line{
-  display: flex;  
+  display: flex;
 }
 
 .social-call-form{
-  width: 358;
+  width: 358px;
   height: 50px;
   background-color: var(--footer-color);
   border:1px solid rgba(255, 255, 255, 0.3);
@@ -626,12 +626,11 @@ margin-right:0px;
   padding-left: 16px;
   font-size:16px;
   line-height: 1.25;
-  margin-right: 12px;
+  margin-right: 26px;
 }
 
 .button, .button:hover, .button:focus{
   display: flex;
-  flex-wrap; none;
   margin: 0 auto;
   min-width:200px;
   height: 50px;
