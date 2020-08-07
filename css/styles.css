@@ -18,6 +18,7 @@
 --business-item-background: rgba(47, 48, 58, 0.8);
 --footer-social-background: rgba(255, 255, 255, 0.1);
 --footer-color:#2f303A;
+--form-icon-color: #000000;
 }
 
  /*глобальный border-box*/
@@ -272,15 +273,29 @@ span{color:var(--logo-color);}
   top: 13px;
   right: 13px;
   display: block;
-  width:18px;
-  height: 18px;
-  padding: 6px;
+  padding: 10px;
   border-radius: 50%;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.close-form-button-icon{
+  width:18px;
+  height: 18px;
+  fill: var(--form-icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-form-button:hover .close-form-button-icon, 
+.close-form-button:focus .close-form-button-icon{
+  fill:var(--accent-color);
+  cursor: pointer;
+}
+
 .form-header{
+  font-weight: bold;
   font-size: 20px;
   line-height: 1.15px;
   color: var(--title-light-theme-color);
@@ -305,6 +320,12 @@ span{color:var(--logo-color);}
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+}
+
+.form-label-icon{
+  width: 12px;
+  height: 12px;
+  /*padding: 14px 11px 14px 19px;*/
 }
 
 .form-comment{
