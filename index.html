@@ -68,23 +68,39 @@
           <button class = "modal-btn" type = "button">Заказать услугу</button>
         </div>
 
+        <!--ВСПЛЫВАЮЩАЯ ФОРМА-->
         <div class = "form-section">
-          <button class = "close-form-button" href = ""></button>
+          
+          <button class = "close-form-button" href = "">
+          <svg class = "close-form-button-icon">
+            <use href = "./images/sprite.svg#icon-close"></use>
+          </svg></button>
 
-          <h2 class = "form-header">Оставьте свои данные, мы вам перезвоним</h2>
+          <p class = "form-header">Оставьте свои данные, мы вам перезвоним</p>
+          
           <form class = "form">
 
-            <label class = "form-label"  for="name">Имя</label>
+            <label class = "form-label"  for="name">
+              <svg class = "form-label-icon">
+                <use href = "./images/sprite.svg#icon-name"></use>
+              </svg>
+              Имя</label>
             <input class = "form-input" type = "text" name = "name" id = "name">
 
-            <label class = "form-label" for = "telephone">Телефон</label>
+            <label class = "form-label" for = "telephone">
+              <svg class = "form-label-icon">
+                <use href = "./images/sprite.svg#icon-tel"></use>
+              </svg>
+              Телефон</label>
             <input class = "form-input" type = "tel" name = "telephone" id = "telephone">
 
-            <label class = "form-label" for = "mail">Почта</label>
+            <label class = "form-label" for = "mail">
+              <svg class = "form-label-icon">
+                <use href = "./images/sprite.svg#icon-mail"></use>
+              </svg>Почта</label>
             <input class = "form-input" type = "email" name = "mail" id = "mail">
 
             <textarea class = "form-comment" name = "comment" rows = "3" placeholder = "Комментарий"></textarea>
-
 
             <div class = "checkbox-form">
               <input class = "checkbox" type = "checkbox" name = "terms" id = "terms">
@@ -95,8 +111,6 @@
           <button class = "modal-btn form-button" href = "">Отправить</button>
           </div>
       </section>
-      
-      <!--ФОРМА-->
       
       <!--ФИЧИ-->
       <section class = "features-section">
