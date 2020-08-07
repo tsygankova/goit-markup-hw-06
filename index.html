@@ -63,14 +63,40 @@
     <main>
       <!--ГЕРОЙ-->
       <section class = "hero">
-        <div class = "overlay">
           <div class = "container hero-container">
           <h1 class = "hero-title">Эффективные решения<br> для вашего бизнеса</h1>
           <button class = "modal-btn" type = "button">Заказать услугу</button>
-          </div>
         </div>
       </section>
       
+      <!--ФОРМА-->
+      <section class = "form-section">
+          <button class = "close-form-button" href = ""></button>
+
+          <h2 class = "form-header">Оставьте свои данные, мы вам перезвоним</h2>
+          <form class = "form">
+
+            <label class = "form-label"  for="name">Имя</label>
+            <input class = "form-input" type = "text" name = "name" id = "name">
+
+            <label class = "form-label" for = "telephone">Телефон</label>
+            <input class = "form-input" type = "tel" name = "telephone" id = "telephone">
+
+            <label class = "form-label" for = "mail">Почта</label>
+            <input class = "form-input" type = "email" name = "mail" id = "mail">
+
+            <textarea class = "form-comment" name = "comment" rows = "3" placeholder = "Комментарий"></textarea>
+
+
+            <div class = "checkbox-form">
+              <input class = "checkbox" type = "checkbox" name = "terms" id = "terms">
+              <label for = "terms">Соглашаюсь с рассылкой и принимаю  <a class = "terms-link" href = "http://facebook.com">Условия договора</a></label>
+            </div>
+            </form> 
+
+          <button class = "modal-btn form-button" href = "">Отправить</button>
+      </section>
+
       <!--ФИЧИ-->
       <section class = "features-section">
         <div class = "container">
