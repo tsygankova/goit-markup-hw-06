@@ -445,6 +445,11 @@ border-color: var(--accent-color);
   color:var(--accent-color);
 }
 
+.form-button:hover, .form-button:focus{
+cursor: pointer;
+}
+
+
 /*ФИЧИ*/
 
 .features-section{
