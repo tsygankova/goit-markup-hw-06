@@ -405,17 +405,17 @@
     <div data-modal class = "backdrop is-hidden">
     <div class = "form-section">
           
-      <button data-modal-close class = "close-form-button" href = "">
+      <button data-modal-close class = "close-form-button" type = "button" href = "">
       <svg class = "close-form-button-icon">
         <use href = "./images/sprite.svg#icon-close-black"></use>
       </svg></button>
 
       <h2 class = "form-header">Оставьте свои данные, мы вам перезвоним</h2>
       
-      <form class = "form" autocomplete="off">
+      <form class = "form">
 
         <div class = "form-field">
-          <input class = "form-input" type = "text" name = "name" id = "name" placeholder=" ">
+          <input class = "form-input" type = "text" name = "name" id = "name" placeholder=" " required>
           <label class = "form-label"  for="name">Имя</label>
           <span class = "form-label-icon">
             <svg>
@@ -425,7 +425,7 @@
         </div>
 
         <div class = "form-field">
-          <input class = "form-input" type = "tel" name = "telephone" id = "telephone" placeholder=" ">
+          <input class = "form-input" type = "tel" name = "telephone" id = "telephone" placeholder=" " required>
           <label class = "form-label" for = "telephone">Телефон</label>
           <span class = "form-label-icon">
             <svg>
@@ -442,8 +442,11 @@
           </svg>
         </div>
         
-        <textarea class = "form-comment" name = "comment" rows = "3" placeholder = "Комментарий"></textarea>
-          
+      <div class = "comment-field">
+        <textarea class = "form-comment" name = "comment" rows = "3" id = "comment" placeholder = " "></textarea>
+        <label class = "comment-label" for = "comment">Комментарий</label> 
+      </div>
+        
         <div class = "checkbox-form">
             <label class = "checkbox-label" for = "terms">
               <input class = "checkbox" type = "checkbox" name = "terms" id = "terms">
@@ -456,9 +459,9 @@
             </label>  
         </div>
       
+        <button class = "modal-btn form-button" type = "submit" href = "">Отправить</button>
+
       </form> 
-    
-      <button class = "modal-btn form-button" href = "">Отправить</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
