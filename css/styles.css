@@ -391,12 +391,32 @@ fill: var(--accent-color);
 }
 
 .checkbox-form{
+  position: relative;
   display: flex;
   margin-bottom: 30px;
 }
 
 .checkbox{
   margin-right: 10px;
+  appearance: none;
+}
+
+.icon-check{
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  position: absolute;
+  left:10px;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox::checked + .icon-check{
+background-color: green;
+fill: var(--title-dark-theme-color);
 }
 
 .terms{
@@ -804,6 +824,8 @@ margin-right:0px;
   letter-spacing: 0.06em;
   color: var(--title-dark-theme-color);
   border:transparent;
+  justify-content: center;
+  align-items: center;
 }
 
 .sendicon{
