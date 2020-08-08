@@ -302,7 +302,7 @@ span{color:var(--logo-color);}
   font-size: 20px;
   line-height: 1.15px;
   color: var(--title-light-theme-color);
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .form{
@@ -314,15 +314,18 @@ span{color:var(--logo-color);}
   position: relative;
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   margin-bottom: 28px;
 }
 
 .form-input{
-  padding: 6px 42px 6px 42px;
+  padding: 6px 16px 6px 42px;
   width: 100%;
   height: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label{
@@ -333,20 +336,47 @@ span{color:var(--logo-color);}
   line-height: 1.17;
   letter-spacing: 0.01em;
   transform: translateY(-50%);
-  transition-property: transform;
+  transition-property: color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label-icon{
-  width: 12px;
-  height: 12px;
-  /*padding: 14px 11px 14px 19px;*/
+  display: flex;
+  width: 18px;
+  height: 18px;
+  margin-left: 18px;
+  fill: var(--form-icon-color);
+
+  position: absolute;
+  top: 11px;
+  left:0;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input:focus ~ .form-label-icon,
+.form-input:hover ~ .form-label-icon{
+fill: var(--accent-color);
+}
+
+.form-input:focus + .form-label,
 .form-input:hover + .form-label,
 .form-input:not(:placeholder-shown) + .form-label{
-  transform: translateY(-35px);
+  transform: translateY(-37px);
+  color: var(--accent-color);
+}
+
+.form-input:hover,
+.form-input:focus{
+  border-color:var(--accent-color);
+  cursor: pointer;
+}    
+
+.form-input:focus .form-label-icon{
+  fill: var(--accent-color);
 }
 
 .form-comment{
