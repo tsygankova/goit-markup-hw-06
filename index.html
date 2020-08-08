@@ -73,33 +73,28 @@
           
           <button class = "close-form-button" href = "">
           <svg class = "close-form-button-icon">
-            <use href = "./images/sprite.svg#icon-close"></use>
+            <use href = "./images/sprite.svg#icon-close-black"></use>
           </svg></button>
 
-          <p class = "form-header">Оставьте свои данные, мы вам перезвоним</p>
+          <h2 class = "form-header">Оставьте свои данные, мы вам перезвоним</h2>
           
           <form class = "form">
 
-            <label class = "form-label"  for="name">
-              <svg class = "form-label-icon">
-                <use href = "./images/sprite.svg#icon-name"></use>
-              </svg>
-              Имя</label>
-            <input class = "form-input" type = "text" name = "name" id = "name">
+            <div class = "form-field">
+              <input class = "form-input" type = "text" name = "name" id = "name" placeholder=" ">
+              <label class = "form-label"  for="name">Имя</label>
+            </div>
 
-            <label class = "form-label" for = "telephone">
-              <svg class = "form-label-icon">
-                <use href = "./images/sprite.svg#icon-tel"></use>
-              </svg>
-              Телефон</label>
-            <input class = "form-input" type = "tel" name = "telephone" id = "telephone">
+            <div class = "form-field">
+              <input class = "form-input" type = "tel" name = "telephone" id = "telephone" placeholder=" ">
+              <label class = "form-label" for = "telephone">Телефон</label>
+            </div>
 
-            <label class = "form-label" for = "mail">
-              <svg class = "form-label-icon">
-                <use href = "./images/sprite.svg#icon-mail"></use>
-              </svg>Почта</label>
-            <input class = "form-input" type = "email" name = "mail" id = "mail">
-
+            <div class = "form-field">
+              <input class = "form-input" type = "email" name = "mail" id = "mail" placeholder=" ">
+              <label class = "form-label" for = "mail">Почта</label>
+            </div>
+            
             <textarea class = "form-comment" name = "comment" rows = "3" placeholder = "Комментарий"></textarea>
 
             <div class = "checkbox-form">
