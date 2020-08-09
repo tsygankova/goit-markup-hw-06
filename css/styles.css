@@ -525,6 +525,12 @@ margin-right:0px;
   padding: 40px;
 }
 
+.form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
 .close-form-button{
   position: absolute;
   top: 8px;
@@ -563,11 +569,7 @@ margin-right:0px;
   margin-bottom: 40px;
 }
 
-.form{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
+
 .form-field{
   position: relative;
   width: 100%;
@@ -882,7 +884,6 @@ cursor: pointer;
   letter-spacing: 0.06em;
   color: var(--title-dark-theme-color);
   border:transparent;
-  justify-content: center;
   align-items: center;
 }
 
@@ -937,7 +938,7 @@ margin-left: 10px;
 
 .filter:hover, .filter:focus{
   color: var(--hover-buttons-text);
-  background-color: rgba(33, 150, 243, 1);
+  background-color: var(--portfolio-color);
 }
 
 /*portolio items*/
